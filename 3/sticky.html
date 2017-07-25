@@ -6,7 +6,7 @@
 
 <meta charset="utf-8">
 
-<title>Box Model</title>
+<title>Sticky</title>
 
 <style>
 
@@ -35,13 +35,40 @@ float: left;
 
 }
 
+ul.navbar {
+
+	list-style-type: none;
+	background-color: red;
+	height: 50px;
+	position: fixed;
+}
+
+ul.navbar li {
+
+	float: left; 
+	padding: 50px;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="otro">
+<div class="nav">
+	
+	<ul class="navbar">
+		
+		<li style="line-height: 10px">Menu</li>
+		<li style="line-height: 10px">Contacto</li>
+		<li style="line-height: 10px">Info</li>
+		<li style="line-height: 10px">Location</li>
+
+	</ul>
+
+</div>
+
+<div class="otro" style="clear: both;">
 	
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
